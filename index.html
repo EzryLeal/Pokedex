@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex - Encuentra tu Pokémon</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">PokéDex</h1>
+                <p class="header__subtitle">Descubre el mundo Pokémon</p>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__image-container">
+                    <img src="poke-shadow.jpg" alt="Pokémon Shadow" class="hero__shadow" id="pokemonDisplay">
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="search">
+                    <div class="search__container">
+                        <input 
+                            type="text" 
+                            class="search__input" 
+                            id="searchInput"
+                            placeholder="Buscar Pokémon..."
+                            autocomplete="off"
+                        >
+                        <button class="search__button" id="searchButton">
+                            <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters">
+            <div class="filters__container">
+                <h2 class="filters__title">Filtrar por tipo</h2>
+                <div class="filters__grid" id="typeFilters">
+                    <!-- Types will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pokemon List -->
+        <section class="pokemon-list">
+            <div class="pokemon-list__container">
+                <div class="pokemon-list__header">
+                    <h2 class="pokemon-list__title">Pokémon</h2>
+                    <button class="pokemon-list__favorites-toggle" id="favoritesToggle">
+                        <svg class="pokemon-list__heart" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        Favoritos
+                    </button>
+                </div>
+                
+                <div class="pokemon-grid" id="pokemonGrid">
+                    <!-- Pokemon cards will be loaded dynamically -->
+                </div>
+                
+                <div class="loading" id="loading">
+                    <div class="loading__spinner"></div>
+                    <p class="loading__text">Cargando Pokémon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pokemon Detail Modal -->
+        <div class="modal" id="pokemonModal">
+            <div class="modal__overlay" id="modalOverlay"></div>
+            <div class="modal__content">
+                <button class="modal__close" id="modalClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal__body" id="modalBody">
+                    <!-- Pokemon details will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
