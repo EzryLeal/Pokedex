@@ -35,9 +35,9 @@ Permite buscar Pokémon, filtrarlos por tipo, ver sus estadísticas y marcarlos 
 ## Estructura del proyecto
 
 Pokedex/ 
-├── 📁 CSS/styles.css 
-├── 📁 JS/script.js 
-├── poke-shadow.png 
-├── index.html 
-├── package.json 
+- ├── 📁 CSS/styles.css 
+- ├── 📁 JS/script.js 
+- ├── poke-shadow.png 
+- ├── index.html 
+- ├── package.json 
 └── README.md
