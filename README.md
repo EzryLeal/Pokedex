@@ -40,4 +40,4 @@ Pokedex/
 - ├── poke-shadow.png 
 - ├── index.html 
 - ├── package.json 
-└── README.md
+- └── README.md
