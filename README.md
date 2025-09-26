@@ -41,3 +41,6 @@ Pokedex/
 - ├── index.html 
 - ├── package.json 
 - └── README.md
+
+-  Link del video https://www.youtube.com/watch?v=oqSKJg5YdCg
+-  link de la pagina web https://ezryleal.github.io/Pokedex/
